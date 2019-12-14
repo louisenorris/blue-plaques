@@ -1,33 +1,54 @@
-.App {
+body {
+  background-image: url('./bricks.jpg');
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.title {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.detailscard {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 50rem;
+  height: 30rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px grey;
+  background-color: white
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 13rem;
+  height: 20rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px grey;
+  background-color: white
+}
+
+.header {
+  font-weight: bold;
+}
+
+.image {
+  justify-self: center;
+  height: 12rem;
+  width: auto
+}
+
+.xbutton {
+  font-size: 12px;
+  padding: 10px 10px;
+  float: left;
+  margin: 7px
+}
+
+.filters {
+  color: white;
+  font-weight: bold;
 }
