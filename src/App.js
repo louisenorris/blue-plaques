@@ -38,11 +38,13 @@ class App extends Component {
   }
 
   handleFilterChange = (event) => {
+    debugger
     this.setState({filterType: event.target.value})
   }
 
   searchAndFilterPlaques = () => {
     if (this.state.filterType) {
+      debugger
       this.searchPlaques().filter(plaque => plaque.colour_name !== null && plaque.colour_name === this.state.filterType)
     } else {
       return this.searchPlaques()
