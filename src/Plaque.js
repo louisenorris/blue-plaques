@@ -5,7 +5,7 @@ const Plaque = (props) => {
 
     return (
         <div className="card">
-            <div className="image"><img src={(props.plaque.thumbnail_url !== null) ? props.plaque.thumbnail_url : emptyPlaque } alt="plaque" width="200" height="200"/></div>
+            {/* <div className="image"><img src={(props.plaque.thumbnail_url !== null) ? props.plaque.thumbnail_url : emptyPlaque } alt="plaque" width="200" height="200"/></div> */}
             {/* <div className="image"><img src={props.plaque.thumbnail_url} alt="plaque" width="200" height="200"/></div> */}
             <br/>
             <div className="content">
