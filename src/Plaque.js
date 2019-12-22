@@ -9,7 +9,7 @@ const Plaque = (props) => {
             {/* <div className="image"><img src={props.plaque.thumbnail_url} alt="plaque" width="200" height="200"/></div> */}
             <br/>
             <div className="content">
-                <div className="header">{props.plaque.subjects}</div>
+                <div className="header">{ props.plaque.subjects ? (props.plaque.subjects).split(' ').slice(0, 4).join(' ') : null}</div>
                 <br/>
                 <button onClick={() => props.handleClick(props.plaque.id)} className="button">Show details</button>
             </div>
