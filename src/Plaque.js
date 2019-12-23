@@ -1,5 +1,5 @@
 import React from 'react';
-import emptyPlaque from './emptyblue.png';
+// import emptyPlaque from './emptyblue.png';
 
 const Plaque = (props) => {
 

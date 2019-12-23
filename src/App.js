@@ -43,7 +43,7 @@ class App extends Component {
   }
 
   searchAndFilterPlaques = () => {
-    if (this.state.filterType) {
+    if (this.state.plaques && this.state.filterType) {
       debugger
       this.searchPlaques().filter(plaque => plaque.colour_name !== null && plaque.colour_name === this.state.filterType)
     } else {
@@ -70,6 +70,7 @@ class App extends Component {
           handleSearchChange={this.handleSearchChange} 
           searchTerm={this.state.searchTerm}
           handleFilterChange={this.handleFilterChange}
+          filterType={this.state.filterType}
         />
         <PlaquesContainer 
           plaques={this.searchAndFilterPlaques()}
