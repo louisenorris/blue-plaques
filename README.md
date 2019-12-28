@@ -1,4 +1,4 @@
-Playing around with blue plaques data and React.
+Playing around with blue plaques (data from public domain licenced [Open Plaques](https://openplaques.org/datadata)) and React. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
