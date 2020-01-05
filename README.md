@@ -25,17 +25,18 @@ On a new terminal tab, navigate to the directory inside the root directory of th
 
 `npm install`
 
-Start the server on port 3001.
+To access the data stored in `src/data/db.json` run the following two commands:
+
+`npm install -g json-server`
+
+`json-server --watch src/data/db.json`
+
+This runs the json server in development mode and creates a server storing all of the plaque data with restful routes at http://localhost:3000/plaques. Once this is running, in a separate terminal still inside this directory, start the server on port 3001.
 
 `npm start`
 
 Visit localhost:3001.
 
-In a separate terminal, still inside this directory, run the json server:
-
-`json-server --watch src/data/db.json`
-
-This runs the json server in development mode.
 
 **Now you're all set!**
 
