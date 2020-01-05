@@ -31,7 +31,7 @@ Start the server on port 3001.
 
 Visit localhost:3001.
 
-In a separate terminal, still inside this directory, run the JSON server:
+In a separate terminal, still inside this directory, run the json server:
 
 `json-server --watch src/data/db.json`
 
