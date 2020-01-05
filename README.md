@@ -31,7 +31,7 @@ To access the data stored in `src/data/db.json` run the following two commands:
 
 `json-server --watch src/data/db.json`
 
-This runs the json server in development mode and creates a server storing all of the plaque data with restful routes at http://localhost:3000/plaques. Once this is running, in a separate terminal still inside this directory, start the server on port 3001.
+This runs the json server in development mode and creates a server storing all of the plaque data with restful routes at http://localhost:3000/plaques. Once this is running, in a separate terminal still inside this directory, start the server on port 3001 by running:
 
 `npm start`
 
