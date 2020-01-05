@@ -12,7 +12,7 @@ class App extends Component {
     plaques: [],
     searchTerm: "",
     selectedPlaqueId: null,
-    filterType: null
+    // filterType: null
   }
 
   componentDidMount() {
@@ -37,19 +37,19 @@ class App extends Component {
     }
   }
 
-  handleFilterChange = (event) => {
-    debugger
-    this.setState({filterType: event.target.value})
-  }
+  // handleFilterChange = (event) => {
+  //   debugger
+  //   this.setState({filterType: event.target.value})
+  // }
 
-  searchAndFilterPlaques = () => {
-    if (this.state.plaques && this.state.filterType) {
-      debugger
-      this.searchPlaques().filter(plaque => plaque.colour_name !== null && plaque.colour_name === this.state.filterType)
-    } else {
-      return this.searchPlaques()
-    }
-  }
+  // searchAndFilterPlaques = () => {
+  //   if (this.state.plaques && this.state.filterType) {
+  //     debugger
+  //     this.searchPlaques().filter(plaque => plaque.colour_name !== null && plaque.colour_name === this.state.filterType)
+  //   } else {
+  //     return this.searchPlaques()
+  //   }
+  // }
 
   handleShowPlaque = (plaqueId) => {
     this.setState({selectedPlaqueId: plaqueId})
@@ -69,11 +69,11 @@ class App extends Component {
         <Search  
           handleSearchChange={this.handleSearchChange} 
           searchTerm={this.state.searchTerm}
-          handleFilterChange={this.handleFilterChange}
-          filterType={this.state.filterType}
+          // handleFilterChange={this.handleFilterChange}
+          // filterType={this.state.filterType}
         />
         <PlaquesContainer 
-          plaques={this.searchAndFilterPlaques()}
+          plaques={this.searchPlaques()}
           handleShowPlaque={this.handleShowPlaque}
           selectedPlaque={this.state.plaques.find(plaque => plaque.id ===  this.state.selectedPlaqueId)}
           backToAllPlaques={this.backToAllPlaques}

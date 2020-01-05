@@ -1,6 +1,17 @@
-Playing around with blue plaques (data from public domain licenced [Open Plaques](https://openplaques.org/data)) and React. 
+Playing around with blue plaques (data from public domain licenced [Open Plaques](https://openplaques.org/data)) and React. A project in process...
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The app is being built using:
+
+* React Frontend.
+* Open Plaques API.
+
+## User stories: 
+
+A user can:
+
+* Browse all blue plaquesd optained from the API.
+* View their further details by clicking on a plue plaque.
+* Search for a blue plaque.
 
 ## Available Scripts
 
