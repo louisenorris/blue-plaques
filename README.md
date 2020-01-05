@@ -29,13 +29,14 @@ Start the server on port 3001.
 
 Visit localhost:3001.
 
-**You're all set!**
+In a separate terminal, still inside this directory run the JSON server:
 
+`json-server --watch src/data/db.json`
 
+This runs the json server in development mode.
 
-### `json-server --watch src/data/db.json`
+**Now you're all set!**
 
-Runs the json server in development mode.
 
 <!-- ### `npm test`
 
