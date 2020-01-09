@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Search extends Component {
     render() {
         return (
-            <div>
+            <div id="search-box">
                 <form className="search" onChange={this.props.handleSearchChange}>
                     <input type="text" placeholder="Search plaques..." value={this.props.searchTerm}/>
                 </form>
