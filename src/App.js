@@ -65,13 +65,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <Search  
-          handleSearchChange={this.handleSearchChange} 
-          searchTerm={this.state.searchTerm}
-          // handleFilterChange={this.handleFilterChange}
-          // filterType={this.state.filterType}
-        />
+        <div id="nav">
+          <Navbar />
+          <Search  
+            handleSearchChange={this.handleSearchChange} 
+            searchTerm={this.state.searchTerm}
+            // handleFilterChange={this.handleFilterChange}
+            // filterType={this.state.filterType}
+          />
+        </div>
         <PlaquesContainer 
           plaques={this.searchPlaques()}
           handleShowPlaque={this.handleShowPlaque}

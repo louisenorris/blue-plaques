@@ -8,13 +8,13 @@ class PlaqueList extends Component {
       }
 
     handleFilterChange = (event) => {
-        debugger
+        // debugger
         this.setState({filterType: event.target.value})
       }
     
       searchAndFilterPlaques = () => {
         if (this.state.plaques && this.state.filterType) {
-          debugger
+          // debugger
           this.searchPlaques().filter(plaque => plaque.colour_name !== null && plaque.colour_name === this.state.filterType)
         } else {
           return this.searchPlaques()
@@ -22,10 +22,10 @@ class PlaqueList extends Component {
       }
 
     render() {
-        debugger
+        // debugger
 
         return (
-            <div>
+            <div id="brick-wall">
 
                 <form className="filter" >
                     <label className="filters" >Filter blue: </label>

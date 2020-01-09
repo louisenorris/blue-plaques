@@ -1,10 +1,28 @@
+* {
+  box-sizing: border-box; 
+}
+
 body {
+  margin: 0
+}
+
+#brick-wall {
   background-image: url('./bricks.jpg');
   text-align: center;
 }
 
+#nav {
+  background-color:  blue;
+  padding: 20px
+}
+
+#search-box {
+  padding: 10px 0
+}
+
 .title {
   color: white;
+  margin: 0
 }
 
 .detailscard {
